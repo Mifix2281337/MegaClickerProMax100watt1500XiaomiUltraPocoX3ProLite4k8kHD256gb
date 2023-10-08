@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>421</width>
-    <height>453</height>
+    <width>420</width>
+    <height>509</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,8 +26,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>210</y>
+      <x>150</x>
+      <y>270</y>
       <width>141</width>
       <height>131</height>
      </rect>
@@ -36,6 +36,10 @@
      <string notr="true">QPushButton{
 	background-color: rgb(8, 107, 255);
 	border-radius: 60;
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
 }</string>
     </property>
     <property name="text">
@@ -45,8 +49,8 @@
    <widget class="QPushButton" name="btn2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>200</y>
+      <x>150</x>
+      <y>260</y>
       <width>141</width>
       <height>131</height>
      </rect>
@@ -97,7 +101,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>380</y>
+      <y>440</y>
       <width>121</width>
       <height>61</height>
      </rect>
@@ -116,9 +120,9 @@ QPushButton:pressed {
    <widget class="QLabel" name="label2">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>390</y>
-      <width>81</width>
+      <x>140</x>
+      <y>450</y>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
@@ -131,6 +135,19 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbll">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>150</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
