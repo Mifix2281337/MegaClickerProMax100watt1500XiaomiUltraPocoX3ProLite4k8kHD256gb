@@ -26,7 +26,6 @@ class Boss(QMainWindow):
         self.clck.setText(str(self.clicks_count))
         self.btn.move(random.randint(20, 480),random.randint(290, 480))
 
-
     # регистратор промаха
     def mousePressEvent(self, event):
         self.hp_indicator = self.hp_indicator[1::]
