@@ -26,8 +26,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>210</y>
+      <x>150</x>
+      <y>240</y>
       <width>141</width>
       <height>131</height>
      </rect>
@@ -44,8 +44,8 @@ border-radius: 60
    <widget class="QPushButton" name="btn2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>200</y>
+      <x>150</x>
+      <y>230</y>
       <width>141</width>
       <height>131</height>
      </rect>
@@ -63,7 +63,7 @@ color: rgb(0, 0, 0, 0);
 
 QPushButton:pressed {
 
-  background-color: rgb(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -116,7 +116,7 @@ QPushButton:pressed {
    <widget class="QLabel" name="label2">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>390</y>
       <width>81</width>
       <height>41</height>
