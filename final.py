@@ -10,13 +10,14 @@ from PIL import Image
 import time
 import random
 
+
+
 class Boss(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("untitled1.ui", self)
         self.setWindowTitle("ЕШЬ МОЛИСЬ")
         self.btn.clicked.connect(self.clickedCheck)
-
         self.hp_indicator = "▮▮▮▮▮▮▮▮▮▮"
         self.clicks_count = 700
 
@@ -34,10 +35,8 @@ class Boss(QMainWindow):
             exit()
 
 
-
-
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
+    app = QApplication([])
     ex = Boss()
     ex.show()
-    sys.exit(app.exec_())
+    app.exec_()
