@@ -16,7 +16,7 @@ class App(QMainWindow):
         self.setWindowIcon(QIcon("photo\\nice.png"))
         self.lbll = QLabel(self)
         self.lbll.setGeometry(150, 150, 200, 200)
-        self.lbll.move(120, 1)
+        self.lbll.move(125, 1)
         self.count = 0
         self.level = 1
 
@@ -31,14 +31,14 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap("new_image.jpg"))
-            self.lbll.move(120, 1)
+            self.lbll.move(125, 1)
             playsound("sound\\win.mp3", False)
         elif self.count == 50:
             image = Image.open("photo\\Gala.jpg")
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(120, 1)
+            self.lbll.move(125, 1)
             playsound("sound\\gala.mp3", False)
             playsound("sound\\win.mp3", False)
         elif self.count == 100:
@@ -46,7 +46,7 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\win.mp3", False)
             playsound("sound\\baba.mp3", False)
         elif self.count == 150:
@@ -54,7 +54,7 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\win.mp3", False)
             playsound("sound\\palundra.mp3", False)
         elif self.count == 200:
@@ -64,7 +64,7 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\win.mp3", False)
             playsound("sound\\spit.mp3", False)
         elif self.count == 300:
@@ -72,7 +72,7 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\win.mp3", False)
             playsound("sound\\zashel.mp3", False)
         elif self.count == 400:
@@ -80,7 +80,7 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap('new_image.jpg'))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\win.mp3", False)
             playsound("sound\\mir.mp3", False)
         elif self.count == 500:
@@ -93,13 +93,13 @@ class App(QMainWindow):
             new_image = image.resize((200, 200))  # сжимаем изображение
             new_image.save('new_image.jpg')
             self.lbll.setPixmap(QPixmap("new_image.jpg"))
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             playsound("sound\\MK.mp3", False)
         elif self.count == 700:
             playsound("sound\\fatality.mp3", block=False)
             self.lbll.setText("Ты победил. Красавчик.")
             self.lbll.setGeometry(150, 150, 200, 200)
-            self.lbll.move(160, 1)
+            self.lbll.move(175, 1)
             time.sleep(3)
             exit()
 
