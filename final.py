@@ -17,19 +17,22 @@ class Boss(QMainWindow):
         self.setWindowTitle("ЕШЬ МОЛИСЬ")
         self.btn.clicked.connect(self.clickedCheck)
 
+        self.hp_indicator = "▮▮▮▮▮▮▮▮▮▮"
+        self.clicks_count = 700
+
+    # попадание
     def clickedCheck(self):
-        print("че на")
-        self.btn.move(random.randint(20, 290),random.randint(480, 575))
+        self.clicks_count += 1
+        self.clck.setText(str(self.clicks_count))
+        self.btn.move(random.randint(20, 480),random.randint(290, 480))
 
 
-
-
-    # Чекер координат (не политических)
+    # регистратор промаха
     def mousePressEvent(self, event):
-        x = event.pos().x()
-        y = event.pos().y()
-        print(f'Координаты: ({x}, {y})')
-
+        self.hp_indicator = self.hp_indicator[1::]
+        self.hp.setText(self.hp_indicator)
+        if len(self.hp_indicator) == 0:
+            exit()
 
 
 
