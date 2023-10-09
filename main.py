@@ -99,7 +99,11 @@ class App(QMainWindow):
             self.lbll.setText("Ты победил. Красавчик.")
             time.sleep(3)
             exit()
+            # self.r = Boss()
+            # self.r.show()
+            # self.hide()
 
+# Здесь делать коннект
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
