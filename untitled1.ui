@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>544</width>
-    <height>610</height>
+    <width>590</width>
+    <height>691</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>280</y>
-      <width>521</width>
-      <height>211</height>
+      <width>550</width>
+      <height>350</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -60,8 +60,8 @@ border-radius: 10
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>350</y>
+      <x>120</x>
+      <y>300</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -78,7 +78,7 @@ border-radius: 10;</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>530</y>
+      <y>620</y>
       <width>201</width>
       <height>61</height>
      </rect>
@@ -98,7 +98,7 @@ border-radius: 10;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>550</y>
+      <y>640</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -117,9 +117,9 @@ border-radius: 10;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>450</x>
       <y>10</y>
-      <width>81</width>
+      <width>101</width>
       <height>91</height>
      </rect>
     </property>
@@ -140,14 +140,14 @@ border-radius: 10;</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>50</y>
+      <x>190</x>
+      <y>40</y>
       <width>241</width>
       <height>221</height>
      </rect>
     </property>
     <property name="text">
-     <string>картинка228</string>
+     <string/>
     </property>
    </widget>
   </widget>
