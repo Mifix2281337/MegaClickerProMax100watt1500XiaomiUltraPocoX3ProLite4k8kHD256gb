@@ -35,6 +35,8 @@ class Boss(QMainWindow):
         self.clck.setText(str(self.clicks_count))
         playsound("sound\\udar2.mp3", False)
         self.btn.move(random.randint(20, 480),random.randint(290, 480))
+        if self.clicks_count == 850:
+            
 
     # регистратор промаха
     def mousePressEvent(self, event):
