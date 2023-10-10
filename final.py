@@ -19,7 +19,7 @@ class Boss(QMainWindow):
         self.setWindowTitle("ЕШЬ МОЛИСЬ")
         self.setWindowIcon(QIcon("macboss\\1.png"))
         self.btn.clicked.connect(self.clickedCheck)
-        self.hp_indicator = "▮▮▮▮▮▮▮▮▮▮"
+        self.hp_indicator = "▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮"
         self.clicks_count = 700
         self.lbll2 = QLabel(self)
         self.lbll2.setGeometry(150, 150, 200, 200)
