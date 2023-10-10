@@ -12,7 +12,6 @@ import time
 import random
 
 
-
 class Boss(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -56,7 +55,9 @@ class Boss(QMainWindow):
 
 
 if __name__ == "__main__":
-    app = QApplication([])
+    app = QApplication(sys.argv)
     ex = Boss()
+    playsound("sound\\doom.mp3", False)
+    QtTest.QTest.qWait(7000)
     ex.show()
-    app.exec_()
+    sys.exit(app.exec_())
