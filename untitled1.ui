@@ -57,26 +57,6 @@ border-radius: 10
  MEGA INSANE</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>620</y>
-      <width>201</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Таймер нажатия: 5</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="clck">
     <property name="geometry">
      <rect>
@@ -102,7 +82,7 @@ border-radius: 10
      <rect>
       <x>20</x>
       <y>620</y>
-      <width>281</width>
+      <width>551</width>
       <height>91</height>
      </rect>
     </property>
@@ -117,7 +97,7 @@ border-radius: 10
      <string notr="true">color: rgb(255, 55, 55);</string>
     </property>
     <property name="text">
-     <string>▮▮▮▮▮▮▮▮▮▮</string>
+     <string>▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
