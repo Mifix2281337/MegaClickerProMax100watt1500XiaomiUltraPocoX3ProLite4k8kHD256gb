@@ -47,7 +47,7 @@ class Boss(QMainWindow):
         self.lbll2.move(230, 60)
         QtTest.QTest.qWait(40)
         self.lbll2.move(200, 70)
-        if self.clicks_count == 702:
+        if self.clicks_count == 900:
             self.btn.hide()
             playsound("sound\\dead.mp3", False)
             for i in range(1, 10):
@@ -93,7 +93,7 @@ class Boss(QMainWindow):
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")
-            os.system('shutdown -s')
+            #os.system('shutdown -s')
             exit()
 
 if __name__ == "__main__":
