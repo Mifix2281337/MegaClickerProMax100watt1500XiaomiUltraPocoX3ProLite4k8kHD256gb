@@ -35,6 +35,7 @@ class Boss(QMainWindow):
         self.clicks_count += 1
         self.clck.setText(str(self.clicks_count))
         playsound("sound\\udar2.mp3", False)
+        self.btn.move(random.randint(20, 480), random.randint(290, 480))
         QtTest.QTest.qWait(40)
         self.lbll2.move(200, 30)
         QtTest.QTest.qWait(40)
@@ -45,8 +46,6 @@ class Boss(QMainWindow):
         self.lbll2.move(230, 60)
         QtTest.QTest.qWait(40)
         self.lbll2.move(200, 70)
-    
-        self.btn.move(random.randint(20, 480),random.randint(290, 480))
         if self.clicks_count == 850:
             exit()
 
@@ -80,16 +79,10 @@ class Boss(QMainWindow):
         QtTest.QTest.qWait(20)
         self.lbll2.move(200, 1)
         new_image.save('new_image.png')
-        self.btn.move(random.randint(20, 480),random.randint(290, 480))
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")
             exit()
-    def fakebutton(self):
-        if self.clicks_count == 702:
-            self.fake = QLabel("Привет", self)
-            self.fake.setGeometry(150, 150, 300, 300)
-            self.fake.move(random.randint(20, 480), random.randint(290, 480))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
