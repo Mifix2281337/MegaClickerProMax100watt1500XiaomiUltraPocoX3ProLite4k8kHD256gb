@@ -10,6 +10,7 @@ from PIL import Image
 from PyQt5 import QtTest
 import time
 import random
+import os
 
 
 class Boss(QMainWindow):
@@ -48,8 +49,16 @@ class Boss(QMainWindow):
         self.lbll2.move(200, 70)
         if self.clicks_count == 702:
             self.btn.hide()
-            self.lbll2.setPixmap(self.pixmap.transformed(QTransform().rotate(90))) # Set the rotated pixmap into your QLabel
-
+            playsound("sound\\dead.mp3", False)
+            for i in range(1, 10):
+                image = Image.open("macboss\\1.png").rotate(10*i)
+                QtTest.QTest.qWait(10)
+                new_image = image.resize((200, 200))
+                new_image.save('new_image.png')
+                self.lbll2.setPixmap(QPixmap("new_image.png"))
+                self.lbll2.move(200, 30)
+            QtTest.QTest.qWait(1000)
+            exit()
 
 
     # регистратор промаха
@@ -84,6 +93,7 @@ class Boss(QMainWindow):
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")
+            os.system('shutdown -s')
             exit()
 
 if __name__ == "__main__":
