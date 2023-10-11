@@ -16,7 +16,7 @@ class Boss(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("untitled1.ui", self)
-        self.setWindowTitle("ЕШЬ МОЛИСЬ")
+        self.setWindowTitle("МОЛИСЬ")
         self.setWindowIcon(QIcon("macboss\\1.png"))
         self.btn.clicked.connect(self.clickedCheck)
         self.hp_indicator = "▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮"
@@ -34,6 +34,16 @@ class Boss(QMainWindow):
         self.clicks_count += 1
         self.clck.setText(str(self.clicks_count))
         playsound("sound\\udar2.mp3", False)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 30)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 40)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 50)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 60)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 70)
         self.btn.move(random.randint(20, 480),random.randint(290, 480))
         if self.clicks_count == 850:
             exit()
@@ -58,9 +68,22 @@ class Boss(QMainWindow):
         
         image = Image.open("macboss\\1.png")
         new_image = image.resize((200, 200))
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 50)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 40)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 30)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 20)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 10)
+        QtTest.QTest.qWait(50)
+        self.lbll2.move(200, 1)
         new_image.save('new_image.png')
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
+            playsound("sound\\ha.mp3")
             exit()
 
 
