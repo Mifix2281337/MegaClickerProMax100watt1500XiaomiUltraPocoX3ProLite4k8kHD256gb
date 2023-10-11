@@ -28,6 +28,7 @@ class Boss(QMainWindow):
         new_image.save('new_image.png')
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         self.lbll2.move(200, 30)
+        self.kick.hide()
 
     # попадание
     def clickedCheck(self):
@@ -44,6 +45,7 @@ class Boss(QMainWindow):
         self.lbll2.move(230, 60)
         QtTest.QTest.qWait(40)
         self.lbll2.move(200, 70)
+    
         self.btn.move(random.randint(20, 480),random.randint(290, 480))
         if self.clicks_count == 850:
             exit()
@@ -59,10 +61,6 @@ class Boss(QMainWindow):
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         playsound("sound\\udar.mp3", False)
 
-        self.kick = QLabel(self)
-        self.kick.setGeometry(590,690,590,690)
-        self.kick.setStyleSheet("background-color: rgba(255,0,0,100)")
-        self.kick.move(0,0)
         self.kick.show()
         QtTest.QTest.qWait(100)
         
@@ -82,6 +80,7 @@ class Boss(QMainWindow):
         QtTest.QTest.qWait(20)
         self.lbll2.move(200, 1)
         new_image.save('new_image.png')
+        self.btn.move(random.randint(20, 480),random.randint(290, 480))
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")

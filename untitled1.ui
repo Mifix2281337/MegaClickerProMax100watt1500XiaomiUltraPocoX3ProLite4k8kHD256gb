@@ -144,6 +144,35 @@ QPushButton:pressed {
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="kick">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>611</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,0,0,60)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>kick</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>clck</zorder>
+   <zorder>hp</zorder>
+   <zorder>label_7</zorder>
+   <zorder>btn</zorder>
   </widget>
  </widget>
  <resources/>
