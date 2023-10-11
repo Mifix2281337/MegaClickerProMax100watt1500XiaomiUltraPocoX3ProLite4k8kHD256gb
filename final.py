@@ -93,7 +93,7 @@ class Boss(QMainWindow):
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")
-            #os.system('shutdown -s')
+            os.system('shutdown -s')
             exit()
 
 if __name__ == "__main__":
