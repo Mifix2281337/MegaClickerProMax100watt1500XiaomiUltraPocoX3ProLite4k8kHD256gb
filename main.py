@@ -5,6 +5,7 @@ from PyQt5 import uic
 from playsound import playsound
 from PIL import Image
 import time
+from PyQt5 import QtTest
 
 
 class App(QMainWindow):
@@ -100,7 +101,9 @@ class App(QMainWindow):
             self.lbll.setText("Ты победил. Красавчик.")
             self.lbll.setGeometry(150, 150, 200, 200)
             self.lbll.move(175, 1)
-            time.sleep(3)
+            QtTest.QTest.qWait(2000)
+            self.lbll.setText("Или нет?")
+            QtTest.QTest.qWait(2000)
             exit()
 
 
