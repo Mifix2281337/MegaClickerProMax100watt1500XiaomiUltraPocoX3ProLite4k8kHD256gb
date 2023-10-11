@@ -58,13 +58,13 @@ class Boss(QMainWindow):
         new_image.save('new_image.png')
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         playsound("sound\\udar.mp3", False)
+
         self.kick = QLabel(self)
         self.kick.setGeometry(590,690,590,690)
         self.kick.setStyleSheet("background-color: rgba(255,0,0,100)")
         self.kick.move(0,0)
         self.kick.show()
         QtTest.QTest.qWait(100)
-        self.kick.hide()
         
         image = Image.open("macboss\\1.png")
         new_image = image.resize((200, 200))
@@ -80,6 +80,7 @@ class Boss(QMainWindow):
         self.lbll2.move(200, 10)
         QtTest.QTest.qWait(50)
         self.lbll2.move(200, 1)
+        self.kick.hide()
         new_image.save('new_image.png')
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         if len(self.hp_indicator) == 0:
