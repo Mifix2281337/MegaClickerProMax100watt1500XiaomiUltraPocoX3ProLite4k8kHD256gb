@@ -46,8 +46,10 @@ class Boss(QMainWindow):
         self.lbll2.move(230, 60)
         QtTest.QTest.qWait(40)
         self.lbll2.move(200, 70)
-        if self.clicks_count == 850:
-            exit()
+        if self.clicks_count == 702:
+            self.btn.hide()
+            self.lbll2.setPixmap(self.pixmap.transformed(QTransform().rotate(90))) # Set the rotated pixmap into your QLabel
+
 
 
     # регистратор промаха
