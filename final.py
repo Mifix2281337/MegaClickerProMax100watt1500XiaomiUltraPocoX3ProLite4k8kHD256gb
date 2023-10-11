@@ -85,7 +85,11 @@ class Boss(QMainWindow):
         if len(self.hp_indicator) == 0:
             playsound("sound\\ha.mp3")
             exit()
-
+    def fakebutton(self):
+        if self.clicks_count == 702:
+            self.fake = QLabel("Привет", self)
+            self.fake.setGeometry(150, 150, 300, 300)
+            self.fake.move(random.randint(20, 480), random.randint(290, 480))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
