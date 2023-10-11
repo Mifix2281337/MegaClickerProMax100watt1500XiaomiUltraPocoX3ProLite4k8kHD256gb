@@ -36,7 +36,8 @@ class Boss(QMainWindow):
         playsound("sound\\udar2.mp3", False)
         self.btn.move(random.randint(20, 480),random.randint(290, 480))
         if self.clicks_count == 850:
-            
+            exit()
+
 
     # регистратор промаха
     def mousePressEvent(self, event):
@@ -47,7 +48,14 @@ class Boss(QMainWindow):
         new_image.save('new_image.png')
         self.lbll2.setPixmap(QPixmap("new_image.png"))
         playsound("sound\\udar.mp3", False)
+        self.kick = QLabel(self)
+        self.kick.setGeometry(590,690,590,690)
+        self.kick.setStyleSheet("background-color: rgba(255,0,0,100)")
+        self.kick.move(0,0)
+        self.kick.show()
         QtTest.QTest.qWait(100)
+        self.kick.hide()
+        
         image = Image.open("macboss\\1.png")
         new_image = image.resize((200, 200))
         new_image.save('new_image.png')
@@ -60,6 +68,6 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     ex = Boss()
     playsound("sound\\doom.mp3", False)
-    QtTest.QTest.qWait(7000)
+    #QtTest.QTest.qWait(7000)
     ex.show()
     sys.exit(app.exec_())
